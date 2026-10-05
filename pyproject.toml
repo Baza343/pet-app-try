@@ -1,13 +1,16 @@
 [project]
 name = "pet-app"
-version = "0.1.0"
+version = "0.1.1"
 description = "just my useless work"
 readme = "README.md"
 authors = [
     { name = "baza343", email = "blaballabala@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "psycopg2-binary>=2.9.13",
+    "python-dotenv>=1.2.4",
+]
 
 [project.scripts]
 pet-app = "pet_app:main"

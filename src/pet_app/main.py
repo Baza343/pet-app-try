@@ -3,7 +3,7 @@ from datetime import datetime
 from fastapi import Depends, FastAPI, HTTPException, status
 from sqlalchemy.orm import Session
 
-from pet_app import database, models, schemas
+from pet_app import database, database2, models, schemas
 
 app = FastAPI()
 models.Base.metadata.create_all(bind=database.engine)
